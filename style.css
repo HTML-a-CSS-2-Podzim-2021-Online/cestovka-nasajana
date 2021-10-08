@@ -8,16 +8,18 @@ body>* {
     margin: auto;
 }
 
-main {
-    /* zvážit zda grid na celou stranu, nebo na sekce*/
+.container {
     display: grid;
+    height: 100vh;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 50px repeat(4, auto) 20px;
 }
 
 footer {
     background-color: black;
     height: 30px;
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
 }
 
 footer p {
@@ -26,3 +28,50 @@ footer p {
     font-size: 10px;
     padding: 10px;
 }
+
+
+/* pokus */
+
+.conteeiner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto) 20px;
+}
+
+.one {
+    background-color: blue;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.two {
+    background-color: blueviolet;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.three {
+    background-color: chocolate;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+
+.four {
+    background-color: magenta;
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+}
+
+.five {
+    background-color: red;
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+}
+
+.six {
+    background-color: lime;
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+}
+
+@media

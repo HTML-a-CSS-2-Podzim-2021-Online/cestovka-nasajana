@@ -1,0 +1,30 @@
+/*.m__zajezd {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40% 30% 30%;
+    height: 100px;
+    gap: 10px;
+}
+
+.m__zajezd h2 {
+    text-align: left;
+    font-size: 16;
+}
+
+.m__zajezd-velky {
+    grid-column: 1/-1;
+    grid-row: 1;
+    background-image: url(podklady/palmy.jpg);
+}
+
+.m__zajezd-maly1 {
+    grid-column: 1/-1;
+    grid-row: 2;
+    background-image: url(podklady/jezero.jpg);
+}
+
+.m__zajezd-maly2 {
+    grid-column: 1/-1;
+    grid-row: 3;
+    background-image: url(podklady/nakole.jpg);
+}*/
