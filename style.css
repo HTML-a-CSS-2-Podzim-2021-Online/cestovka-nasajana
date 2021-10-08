@@ -1,0 +1,28 @@
+@import 'hlavicka.css';
+@import 'novinky.css';
+@import 'sluzby.css';
+@import 'zajezdy.css';
+body>* {
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+main {
+    /* zvážit zda grid na celou stranu, nebo na sekce*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+footer {
+    background-color: black;
+    height: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+}
