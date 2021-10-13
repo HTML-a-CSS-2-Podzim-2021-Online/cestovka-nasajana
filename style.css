@@ -1,77 +1,75 @@
 @import 'hlavicka.css';
-@import 'novinky.css';
-@import 'sluzby.css';
 @import 'zajezdy.css';
+@import 'sluzby.css';
+@import 'novinky.css';
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+}
+
+:root {
+    --hlavni_barva: #F03000;
+}
+
 body>* {
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
+    max-width: 1200px;
     margin: auto;
 }
 
 .container {
     display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px repeat(4, auto) 20px;
-}
-
-footer {
-    background-color: black;
-    height: 30px;
-    grid-column: 1 / -1;
-    grid-row: 6 / 7;
-}
-
-footer p {
-    text-align: center;
-    color: white;
-    font-size: 10px;
-    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
 }
 
 
-/* pokus */
+/*
+.h__nav {
+    grid-row: 2;
+}*/
 
-.conteeiner {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, auto) 20px;
+.m__zajezd {
+    grid-row: 1;
 }
 
-.one {
-    background-color: blue;
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-}
-
-.two {
-    background-color: blueviolet;
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-}
-
-.three {
+.m__sluzby {
     background-color: chocolate;
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2;
 }
 
-.four {
-    background-color: magenta;
-    grid-column: 1 / -1;
-    grid-row: 4 / 5;
+.m__lastmin-title {
+    grid-row: 3;
+    padding: 10px;
+    margin: 0.5em 0;
 }
 
-.five {
+.m__lastmin {
+    grid-row: 4;
+}
+
+.m_novinky-title {
+    grid-row: 5;
+}
+
+.m__novinky {
     background-color: red;
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
+    grid-row: 6;
 }
 
-.six {
-    background-color: lime;
-    grid-column: 1 / -1;
-    grid-row: 6 / 7;
+.paticka {
+    grid-row: 7;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 35px;
 }
 
-@media
+.paticka p {
+    font-size: 10px;
+    text-align: center;
+}
+
+
+}

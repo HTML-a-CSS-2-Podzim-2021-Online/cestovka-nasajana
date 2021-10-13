@@ -1,34 +1,43 @@
 header {
-    color: #F03000;
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;*/
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    grid-column: auto;
 }
 
 header h1 {
+    color: var(--hlavni_barva);
     text-transform: uppercase;
-}
-
-nav {
-    width: 300px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
+    max-width: 300px;
 }
 
 nav li {
     list-style-type: none;
     padding: 15px;
     font-size: 12px;
+    color: var(--hlavni_barva);
 }
 
 nav li:hover,
 nav li:focus {
-    background-color: #F03000;
+    background-color: var(--hlavni_barva);
     color: white;
+}
+
+
+/*   media   */
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

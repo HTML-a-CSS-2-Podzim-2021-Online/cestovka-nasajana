@@ -1,30 +1,154 @@
-/*.m__zajezd {
+.m__zajezd,
+.m__lastmin {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 40% 30% 30%;
-    height: 100px;
-    gap: 10px;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 20px;
+    color: white;
 }
 
-.m__zajezd h2 {
+
+/*   zajezd a lastmin spolecne */
+
+.velky,
+.maly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.velky h3,
+.maly h3,
+.velky p {
+    margin-bottom: 0.25em;
+    font-weight: 800;
+}
+
+.cena {
+    width: 100px;
+    height: 3em;
+    background-color: var(--hlavni_barva);
+    color: white;
+    font-size: 1em;
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+}
+
+.m__zajezd .velky h3,
+.m__lastmin .velky h3 {
     text-align: left;
-    font-size: 16;
+    font-size: 1.5em;
+}
+
+
+/*   zajezd   */
+
+.m__zajezd-velky,
+.m__lastmin-velky {
+    grid-column: 1 / -1;
+    grid-row: 1/7;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.m__zajezd-maly-1,
+.m__lastmin-maly-1 {
+    grid-column: 1 / -1;
+    grid-row: 7/10;
+}
+
+.m__zajezd-maly-2,
+.m__lastmin-maly-2 {
+    grid-column: 1 / -1;
+    grid-row: 10/13;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.m__zajezd-velky,
+.m__lastmin-velky,
+.m__zajezd-maly-1,
+.m__lastmin-maly-1,
+.m__zajezd-maly-2,
+.m__lastmin-maly-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .m__zajezd-velky {
-    grid-column: 1/-1;
-    grid-row: 1;
     background-image: url(podklady/palmy.jpg);
 }
 
-.m__zajezd-maly1 {
-    grid-column: 1/-1;
-    grid-row: 2;
+.m__lastmin-velky {
+    background-image: url(podklady/lodicka.jpg);
+}
+
+.m__zajezd-maly-1 {
     background-image: url(podklady/jezero.jpg);
 }
 
-.m__zajezd-maly2 {
-    grid-column: 1/-1;
-    grid-row: 3;
+.m__lastmin-maly-1 {
+    background-image: url(podklady/podkova.jpg);
+}
+
+.m__zajezd-maly-2 {
     background-image: url(podklady/nakole.jpg);
-}*/
+}
+
+.m__lastmin-maly-2 {
+    background-image: url(podklady/zatoka.jpg);
+}
+
+
+/*   media   */
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .m__zajezd-velky,
+    .m__lastmin-velky {
+        grid-column: 1 / -1;
+        grid-row: 1/9;
+    }
+    .m__zajezd-maly-1,
+    .m__lastmin-maly-1 {
+        grid-column: 1 / 7;
+        grid-row: 9/13;
+    }
+    .m__zajezd-maly-2,
+    .m__lastmin-maly-2 {
+        grid-column: 7 / 13;
+        grid-row: 9/13;
+    }
+}
+
+@media (min-width: 1025px) {
+    .m__zajezd-velky {
+        grid-column: 1 / 9;
+        grid-row: 1/13;
+    }
+    .m__zajezd-maly-1 {
+        grid-column: 9 / 13;
+        grid-row: 1/7;
+    }
+    .m__zajezd-maly-2 {
+        grid-column: 9 / 13;
+        grid-row: 7/13;
+    }
+    .m__lastmin-velky {
+        grid-column: 5 / 13;
+        grid-row: 1/13;
+    }
+    .m__lastmin-maly-1 {
+        grid-column: 1 / 5;
+        grid-row: 1/7;
+    }
+    .m__lastmin-maly-2 {
+        grid-column: 1 / 5;
+        grid-row: 7/13;
+    }
+}
