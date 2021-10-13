@@ -10,6 +10,8 @@
 
 :root {
     --hlavni_barva: #F03000;
+    --blok_barva: #eeeeee;
+    --date-barva: #999999;
 }
 
 body>* {
@@ -40,35 +42,32 @@ body>* {
 
 .m__lastmin-title {
     grid-row: 3;
-    padding: 10px;
-    margin: 0.5em 0;
+    margin-top: 1.5em;
 }
 
 .m__lastmin {
     grid-row: 4;
 }
 
-.m_novinky-title {
+.m__novinky-title {
     grid-row: 5;
+    margin-top: 1.5em;
 }
 
 .m__novinky {
-    background-color: red;
     grid-row: 6;
 }
 
 .paticka {
     grid-row: 7;
     background-color: black;
-    color: white;
-    text-align: center;
-    height: 35px;
+    height: 40px;
+    margin-top: 1.5em;
 }
 
 .paticka p {
     font-size: 10px;
     text-align: center;
-}
-
-
+    color: white;
+    padding-top: 15px;
 }

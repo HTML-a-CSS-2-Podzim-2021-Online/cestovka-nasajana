@@ -1,0 +1,38 @@
+.m__novinky {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.m__novinky h3 {
+    color: var(--hlavni_barva);
+}
+
+.m__novinky-nov p {
+    margin: 0;
+}
+
+.m__novinky-date {
+    color: var(--date-barva);
+}
+
+.m__novinky-nov {
+    background-color: var(--blok_barva);
+    text-align: left;
+    padding: 20px;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*   media   */
+
+@media (min-width: 768px) and (max-width: 1025px) {}
+
+@media (min-width: 1025px) {
+    .m__novinky-nov {
+        grid-column: span 1;
+    }
+}
