@@ -7,22 +7,25 @@ header {
 header h1 {
     color: var(--hlavni_barva);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
     text-align: center;
     margin: 20px 0
+}
+
+.h__nazev {
+    min-width: 250px;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0px;
-    max-width: 300px;
+    max-width: 600px;
 }
 
 nav li {
     list-style-type: none;
-    padding: 15px;
-    font-size: 12px;
+    padding: 10px;
     color: var(--hlavni_barva);
 }
 
