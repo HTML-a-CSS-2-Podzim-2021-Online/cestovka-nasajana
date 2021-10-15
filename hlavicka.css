@@ -16,6 +16,11 @@ header h1 {
     min-width: 250px;
 }
 
+nav {
+    display: block;
+    align-content: center;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -42,5 +47,11 @@ nav li:focus {
     header {
         flex-direction: row;
         justify-content: space-between;
+    }
+    nav {
+        width: 450px;
+    }
+    nav li {
+        font-size: 18px;
     }
 }
