@@ -10,10 +10,14 @@
     color: var(--hlavni_barva);
 }
 
+.m__sluzby p {
+    margin: 0;
+}
+
 .m__sluzby-slu img {
     display: block;
-    height: 2em;
-    margin: 20px;
+    height: 2.5em;
+    padding-left: 1vw;
 }
 
 .m__sluzby-slu {
@@ -23,6 +27,7 @@
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .m__sluzby-slu-text {
